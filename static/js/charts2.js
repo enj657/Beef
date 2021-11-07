@@ -81,8 +81,6 @@ function buildCharts(sample) {
     // 3. Create a variable that holds the washing frequency.
     var washingFreq = resultMetadata.wfreq;
 
-    console.log(washingFreq);
-
     // Create the yticks for the bar chart.
     var yticks = otu_ids.slice(0, 10).reverse();
 

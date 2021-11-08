@@ -88,15 +88,16 @@ function buildCharts(sample) {
     var barData = [{
       x: yticks.map(id => sample_values[otu_ids.indexOf(id)]),
       y: yticks.map(id => "OTU " + id),
+      text: otu_labels,
       type: "bar",
-      orientation: "h",
-      hovertemplate: otu_labels
+      orientation: "h"
     }];
 
     // Create the layout for the bar chart. 
     var barLayout = {
       title: "Top 10 Bacteria Cultures Found",
-      margin: { t: 100, b: 20 }
+      margin: { t: 100, b: 20 },
+      hovermode: "closest"
     }
 
     var plotConfig = {responsive: true}
@@ -114,15 +115,17 @@ function buildCharts(sample) {
         size: sample_values,
         sizeref: 1,
         color: otu_ids,
+        text: otu_labels,
         colorscale: 'Bluered'
       }
-
+  
     }];
 
     // Create the layout for the bubble chart.
     var bubbleLayout = {
       title: "Bacteria Cultures Per Sample",
-      xaxis: { title: "OTU ID" }
+      xaxis: { title: "OTU ID" },
+      hovermode: "closest"
     };
 
     // Use Plotly to plot the bubble data and layout.

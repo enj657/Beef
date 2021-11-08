@@ -2,24 +2,24 @@
     background-image: url("../images/bacteria_jumbotron.png");
     background-size: 100% 100%;
     text-align: center;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     padding-bottom: 20px;
     font-family: verdana;
 
 }
 body {
-    background-color: #cc00ff;
+    background-color: #f6f0f7;
     padding-top: 70px;
     
 }
 
-.icon-bar {
-    background-color: black;
+.anchor {
+    margin-bottom: 80px;
 }
 
-.mt-1 {
-    margin-top: 80px;
+.icon-bar {
+    background-color: black;
 }
 
 #demstyle {
@@ -53,7 +53,12 @@ h5 {
 }
 
 #descdiv {
+    padding-top: 7px;
     background-color: white;
+}
+
+#descdiv h3 {
+    padding-left: 10px;
 }
 
 nav {
@@ -88,9 +93,8 @@ html, body {
 }
 
 
-/* 
-@media all and (min-width: 700px) {{
+/* @media all and (min-width: 700px) {
     #descdiv {
         min-height: 383px;
     }
-}}  */
+} */

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,13 @@
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="static/css/style.css">
 </head>
+
 <body>
   <nav class="navbar navbar-fixed-top navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav1" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav1"
+          aria-expanded="false">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -35,7 +38,7 @@
       </div>
     </div>
   </nav>
-  <div class="container mt-1">
+  <div class="container">
     <div class="row">
       <div class="col-md-12 col-xs-12 jumbotron text-center">
         <h1>Belly Button Biodiversity Dashboard</h1>
@@ -56,19 +59,25 @@
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
-      <div class="col-md-8 col-xs-12" id="descdiv">
-        <h3>Research Explanation</h3>
-        <p class="para" id="description">We are looking to document and discover bacteria that are able to synthesize proteins and taste like beef. We have partnered with Improbable Beef, to research different bacteria species, and find the best bacteria to use to synthesize into fake beef. We believe this bacteria may be found in some human belly buttons. We have gathered research from people's navals from across the country. This website shows the data we have gathered from our research.   </p>
+      <div class="col-md-8 col-xs-12">
+        <div id="descdiv">
+          <h3>Research Explanation</h3>
+          <p class="para" id="description">We are looking to document and discover bacteria that are able to synthesize
+            proteins and taste like beef. We have partnered with Improbable Beef, to research different bacteria
+            species, and find the best bacteria to use to synthesize into fake beef. We believe this bacteria may be
+            found in some human belly buttons. We have gathered research from people's navals from across the country.
+            This website shows the data we have gathered from our research. </p>
+        </div>
       </div>
     </div>
     <div class="row">
       <div class="anchor" id="bar-anchor"></div>
       <div class="col-md-6 col-xs-12">
-        
+
         <div id="bar"></div>
       </div>
       <div class="col-md-6 col-xs-12">
-        <p class="para">fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa </p>
+        <p class="para">Bar Chart Information:<br><br>This is a bar chart that displays the top 10 bacteria cultures found in the selected person's belly button. The labels in the y axis are the bacteria id numbers and the x axis shows the number of each bacteria found. The bacteria names are displayed over hover-text on the bars.  </p>
       </div>
     </div>
     <div class="row">
@@ -77,7 +86,7 @@
         <div id="gauge"></div>
       </div>
       <div class="col-md-6 col-xs-12">
-        <p class="para">fdsafdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa </p>
+        <p class="para">Gauge Information:<br><br>This is a gauge that shows the washing frequency for the selected person. The number of scrubs per week is displayed as a large bold number in the center of the gauge. </p>
       </div>
     </div>
     <div class="row ">
@@ -86,10 +95,11 @@
         <div id="bubble"></div>
       </div>
       <div class="col-md-4 col-xs-12">
-        <p class="para">fdsafdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa </p>
+        <p class="para">Bubble Chart Information:<br><br>This is a bubble chart that shows all of the bacteria that were found in the selected person's belly button. The values for each bacteria are represented by the size of the bubble. The bacteria names are displayed as hover-text over each bubble.</p>
       </div>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
@@ -97,4 +107,5 @@
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="static/js/charts2.js"></script>
 </body>
+
 </html>

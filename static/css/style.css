@@ -4,11 +4,60 @@
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    padding-bottom: 20px;
+    font-family: verdana;
 
 }
 body {
     background-color: #cc00ff;
+    padding-top: 70px;
     
+}
+
+.icon-bar {
+    background-color: black;
+}
+
+.mt-1 {
+    margin-top: 80px;
+}
+
+#demstyle {
+    font-family: verdana;
+    font-size: medium;
+    font-weight: bold;
+}
+
+h3.panel-title {
+    font-family: verdana;
+    font-size: medium !important;
+    font-weight: bold;
+}
+
+h6 {
+    font-family: verdana;
+    font-size: medium !important;
+}
+
+h5 {
+    font-family: verdana;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.para {
+    background-color: white;
+    font-family: verdana;
+    font-size: large;
+    padding: 20px 10px;
+}
+
+#descdiv {
+    background-color: white;
+}
+
+nav {
+    background-color: white;
 }
 
 html, body {
@@ -17,7 +66,7 @@ html, body {
   }
   
   body {
-      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background: linear-gradient(-45deg, #4244d5, #1d9d3d, #1823b3, #de463e);
       background-size: 400% 400%;
       animation: gradient 15s ease infinite;
   }
@@ -32,4 +81,16 @@ html, body {
       100% {
           background-position: 0% 50%;
       }
-  }
+}
+
+#bar, #gauge, #bubble {
+    margin-bottom: 20px;
+}
+
+
+/* 
+@media all and (min-width: 700px) {{
+    #descdiv {
+        min-height: 383px;
+    }
+}}  */

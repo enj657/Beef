@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,48 +9,92 @@
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="static/css/style.css">
 </head>
-
 <body>
-
-  <div class="container">
+  <nav class="navbar navbar-fixed-top navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav1" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Navbar</a>
+      </div>
+      <div class="collapse navbar-collapse" aria-expanded="false" id="nav1">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#bar-anchor">Top 10 Bacteria Cultures Found - Bar Chart</a>
+          </li>
+          <li>
+            <a href="#gauge-anchor">Belly Button Washing Frequency - Gauge</a>
+          </li>
+          <li>
+            <a href="#bubble-anchor">Bacteria Cultures Per Sample - Bubble Chart</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-1">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
+      <div class="col-md-12 col-xs-12 jumbotron text-center">
         <h1>Belly Button Biodiversity Dashboard</h1>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-md-4 col-xs-12">
         <div class="well">
           <h5>Test Subject ID No.:</h5>
           <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
-        <div class="panel panel-primary">
+        <div class="panel panel-primary" id="demstyle">
           <div class="panel-heading">
             <h3 class="panel-title">Demographic Info</h3>
           </div>
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
-      <div class="col-md-5">
-        <div id="bar"></div>
-      </div>
-      <div class="col-md-5">
-        <div id="gauge"></div>
+      <div class="col-md-8 col-xs-12" id="descdiv">
+        <h3>Research Explanation</h3>
+        <p class="para" id="description">We are looking to document and discover bacteria that are able to synthesize proteins and taste like beef. We have partnered with Improbable Beef, to research different bacteria species, and find the best bacteria to use to synthesize into fake beef. We believe this bacteria may be found in some human belly buttons. We have gathered research from people's navals from across the country. This website shows the data we have gathered from our research.   </p>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
+      <div class="anchor" id="bar-anchor"></div>
+      <div class="col-md-6 col-xs-12">
+        
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <p class="para">fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="anchor" id="gauge-anchor"></div>
+      <div class="col-md-6 col-xs-12">
+        <div id="gauge"></div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <p class="para">fdsafdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa </p>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="anchor" id="bubble-anchor"></div>
+      <div class="col-lg-8 col-md-8 col-xs-12">
         <div id="bubble"></div>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <p class="para">fdsafdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa </p>
       </div>
     </div>
   </div>
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="static/js/charts2.js"></script>
-
 </body>
-
 </html>
